@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for post in posts %}
+        <div>
+            <a href="{% url 'post:post_d' post.pk %}">{{ post.pk }}.{{ post.title }}</a>
+        </div>
+    {% endfor %}
+        <button onClick="location.href='{% url "post:post_c" %}'"> 글쓰기</button>
+</body>
+</html>
