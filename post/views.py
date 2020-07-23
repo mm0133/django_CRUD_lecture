@@ -48,7 +48,7 @@ def post_create(request):
         address='/post/post_list/'+str(new_pk)+'/'
         # return redirect(address)
 
-        return redirect(reverse('post:post_detail',kwargs={'pk':new_pk}))
+        return redirect(reverse('post:post_d',kwargs={'pk':new_pk}))
 
 
 
